@@ -107,6 +107,12 @@ public class CardStack
     {
         System.out.println("Current cards in " + name + ": \n");
 
+        if (IsEmpty())
+        {
+            System.out.println("None.");
+            return;
+        }
+
         for (int i = top - 1; i >= 0; i--)
         {
             System.out.println(cardStack[i]);
